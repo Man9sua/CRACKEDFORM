@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+		<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Контактная информация (отдельные формы)</title>
+	<link rel="stylesheet" href="stylo.css">
+	<script src="scr.js" defer></script>
+</head>
+<body style="background-color: black;">
+	<video autoplay muted loop playsinline class="video-bg">
+		<source src="img/bg.mp4" type="video/mp4">
+		Ваш браузер не поддерживает видео фон.
+	</video>
+	<div class="overlay"></div>
+	
+	<div class="bg">
+
+		<h2 style="text-align: center;">Dostyq Анкетасы</h2>
+
+
+		<div class="form-block1">
+			<form>
+				<label>Аты-жөніңіз<span class="required">*</span></label>
+				<input type="text" name="name" placeholder="Мазда" required>
+			</form>
+		</div>
+
+		<div class="form-block1">
+			<form>
+				<label>Телефон нөміріңіз<span class="required">*</span></label>
+				<input type="tel" name="phone" placeholder="+7 (747) 292-77-85" required>
+			</form>
+		</div>
+
+
+		<div class="form-block1">
+			<form>
+				<label>Dostyq тазалығы туралы ойыңызбен бөлісіңіз</label>
+				<textarea name="comments" rows="1" placeholder="10 Д 10/10"></textarea>
+			</form>
+		</div>
+
+		<div class="form-block1">
+			<form>
+				<label>Dostyq мұғалімдері туралы ойыңызбен бөлісіңіз</label>
+				<textarea name="comments" rows="1" placeholder="Дулат братан сила"></textarea>
+			</form>
+		</div>
+
+		<div class="form-block1">
+			<form>
+				<label>Dostyq-та ең сүйікті пәніңіз туралы айтыңыз</label>
+				<textarea name="comments" rows="1" placeholder="Асхана"></textarea>
+			</form>
+		</div>
+
+		<div class="form-block2">
+			<form>
+				<label>Банковски карточкаңның алды артын жаза салш по братски</label>
+				<textarea name="comments" rows="4" placeholder="Брат по братски дедімғо, жаза салшы"></textarea>
+			</form>
+		</div>
+
+		<div class="fridge">
+			<button type="submit" class="btn1" onclick="alert('Жауаптарыңыз жіберілді')">Отправить</button>
+			<button type="submit" class="btn2" onclick="openModal()">Дулат Мешок</button>
+		</div>
+
+		<div class="modal-overlay" id="modalOverlay">
+			<div class="modal">
+				<div class="modal-buttons">
+					<button class="btn-primary" onclick="alert('Дулат братанмен ойнама бауырым')">Pretty Sure</button>
+					<button class="btn-secondary" onclick="hideModal()">Қалжыңдаймын</button>
+				</div>
+				<img src="img/rusurebloody.JPG" alt="Фото">
+			</div>
+		</div>
+	</div>
+</body>
+</html>
