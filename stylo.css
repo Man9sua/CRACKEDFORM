@@ -1,0 +1,171 @@
+body, html {
+	font-family: 'kamerik-3d', sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+	overflow-x: hidden;
+}
+
+.bg {
+  position: relative;
+  height: 100vh;
+	padding-bottom: 50px;
+}
+
+.video-bg {
+  position: fixed;
+  top: 0;
+	left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: blur(8px) brightness(60%);
+  z-index: -2;
+}
+
+
+.overlay {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3); 
+  z-index: -1;
+}
+
+h2 {
+	margin: 0;
+	padding: 20px 0;
+	color: white;
+	box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.fridge {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	gap: 20px;
+}
+.form-block1 {
+	background: white;
+	max-width: 40%;
+	height: 60px;
+	margin: 10px auto;
+	padding: 20px;
+	border-radius: 8px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.form-block2 {
+	background: white;
+	max-width: 40%;
+	height: 100px;
+	margin: 10px auto;
+	padding: 17px;
+	border-radius: 8px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+input, textarea {
+	width: 98%;
+	padding: 10px;
+	margin-top: 5px;
+	margin-bottom: 15px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+}
+label {
+	font-weight: bold;
+}
+.required {
+	color: red;
+}
+.btn1 {
+		width: 120px;
+	height: 40px;
+	border: 2px solid #190c42;
+	border-radius: 15px;
+	transition: all 0.3s;
+	cursor: pointer;
+	background: white;
+	font-size: 0.9em;
+	font-weight: 550;
+}
+
+.btn1:hover {
+	 background: #091335;
+	color: white;
+	font-size: 1em;
+}
+.btn2 {
+		width: 120px;
+	height: 40px;
+	border: 2px solid #190c42;
+	border-radius: 15px;
+	transition: all 0.3s;
+	cursor: pointer;
+	background: white;
+	font-size: 0.9em;
+	font-weight: 550;
+}
+.btn2:hover {
+	 background: #091335;
+	color: white;
+	font-size: 1em;
+}
+
+
+			.modal-overlay {
+				display: none;
+				position: fixed;
+				top: 0; left: 0;
+				width: 100%; height: 100%;
+				background: rgba(0, 0, 0, 0.6);
+				z-index: 1000;
+			}
+
+
+			.modal {
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				border-radius: 20px;
+				background: transparent;
+				padding: 0;
+				max-width: 90%;
+				max-height: 90%;
+				box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+			}
+
+			.modal img {
+				width: 100%;
+				height: auto;
+				border-radius: 20px;
+				display: block;
+			}
+
+			.modal-buttons {
+				display: flex;
+				justify-content: space-between;
+				gap: 10px;
+				margin-top: 15px;
+			}
+
+			.modal-buttons button {
+				flex: 1;
+				padding: 10px;
+				border: none;
+				border-radius: 5px;
+				cursor: pointer;
+				font-weight: bold;
+			}
+
+
+@font-face {
+	font-family: kamerik-3d;
+	src: url(../fonts/SportsWorld-Regular_kz.ttf);
+	font-weight: 900;
+}
+@font-face {
+	font-family: merriweather-italic-3d;
+	src: url(../fonts/MuseoCyrl500.otf);
+}
